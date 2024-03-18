@@ -1,0 +1,14 @@
+{% extends 'mysite/_base.html' %}
+
+{%block content%}
+<article class="content">
+
+    <h1>
+        {{post.title}}  
+    </h1>
+    <time>{{post.date_added}}</time> - <span>{{ post.category.title }}</span>
+    <p><strong> {{post.intro}}</strong></p>
+    <p>{{post.body}}</p>
+</article>
+
+{%endblock%}
